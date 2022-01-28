@@ -81,13 +81,13 @@ extern sleep_mode_cfg app_sleep_mode_cfg;
 
 #define SENSOR_NORMAL       1
 #define SENSOR_IMPEDANCE    0
-#define SENSOR_WUT          1
+#define SENSOR_WUT          0
 
 /* Enable Wakeup Sources for the application */
 #define WAKEUP_SRC_RTC_ALARM_EN            0
 #define WAKEUP_SRC_BB_EN                   0
-#define WAKEUP_SRC_GPIO_EN                 1
-#define WAKEUP_SRC_FIFO_EN				   0
+#define WAKEUP_SRC_GPIO_EN                 0
+#define WAKEUP_SRC_FIFO_EN				   1
 #define WAKEUP_SRC_NFC_EN                  0
 #define WAKEUP_SRC_ADC_THRESHOLD_EN        0
 #define WAKEUP_SRC_SENSOR_DETECTION_EN     0
@@ -114,7 +114,7 @@ extern sleep_mode_cfg app_sleep_mode_cfg;
 /* Enable/disable buck converter
  * Options: VCC_BUCK or VCC_LDO
  */
-#define VCC_BUCK_LDO_CTRL               VCC_BUCK
+#define VCC_BUCK_LDO_CTRL               VCC_LDO
 
 /* GPIO number that is used for easy re-flashing (recovery mode) */
 #define RECOVERY_GPIO                   7
